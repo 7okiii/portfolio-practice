@@ -1,0 +1,29 @@
+@font-face {
+    font-family: ubuntu;
+    src: url('../font/ubuntu-regular-webfont.woff');
+}
+header {
+    display: flex;
+    div {
+        display: inline-block;
+    }
+}
+.nav-var {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #273c75;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        padding: 14px 16px;
+        &:hover {
+            background-color: #324c96;
+        }
+    }
+}

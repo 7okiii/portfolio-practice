@@ -3,39 +3,164 @@
   src: url("../font/ubuntu-regular-webfont.woff");
 }
 
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-header div {
-  display: inline-block;
+body {
+  width: 100%;
 }
 
 .nav-var {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  background-color: #273c75;
-  overflow: hidden;
   position: fixed;
-  top: 0;
+  background-color: rgba(181, 181, 181, 0.219);
   width: 100%;
+  z-index: 10;
 }
 
 .nav-var a {
   display: inline-block;
-  color: white;
-  text-align: center;
+  color: #576574;
+  font-weight: bold;
   text-decoration: none;
   padding: 14px 16px;
 }
 
 .nav-var a:hover {
-  background-color: #324c96;
+  color: #5f27cd;
+}
+
+.name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 800px;
+}
+
+.name h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: ubuntu;
+}
+
+.name p {
+  padding: 5px;
+  color: grey;
+}
+
+.name i {
+  font-size: 3rem;
+  margin-top: 90px;
+}
+
+@media screen and (max-width: 360px) {
+  .name h1 {
+    font-size: 3rem;
+  }
+  .nav-var {
+    display: none;
+  }
+}
+
+.about-wapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 600px;
+  background-color: #c8d6e5;
+}
+
+.about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.about-me .my-pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+.about-me .my-pic img {
+  width: 370px;
+  padding: 20px;
+}
+
+.about-me .my-intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  padding: 20px;
+}
+
+.about-me .my-intro .intro-detail h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .about-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-me .my-pic {
+    width: 80%;
+  }
+  .about-me .my-pic img {
+    width: 360px;
+  }
+  .about-me .my-intro {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .about-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-me .my-intro {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

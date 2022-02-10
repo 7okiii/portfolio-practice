@@ -2,28 +2,119 @@
     font-family: ubuntu;
     src: url('../font/ubuntu-regular-webfont.woff');
 }
-header {
-    display: flex;
-    div {
-        display: inline-block;
-    }
-}
-.nav-var {
-    display: flex;
-    justify-content: flex-end;
-    background-color: #273c75;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
+body {
     width: 100%;
+}
+
+.nav-var {
+    // margin: 0;
+    position: fixed;
+    background-color: rgba(181, 181, 181, 0.219);
+    width: 100%;
+    z-index: 10;
+    // opacity: 0.8;
     a {
         display: inline-block;
-        color: white;
-        text-align: center;
+        color: #576574;
+        font-weight: bold;
         text-decoration: none;
         padding: 14px 16px;
         &:hover {
-            background-color: #324c96;
+            color: #5f27cd;
+        }
+        // ★★ add animation when hover happen
+    }
+}
+.name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+        font-family: ubuntu;
+    }
+    p {
+        padding: 5px;
+        color: grey;
+    }
+    i {
+        font-size: 3rem;
+        margin-top: 90px;
+    }
+
+}
+@media screen and (max-width:360px){
+    .name {
+        h1 {
+            font-size: 3rem;
         }
     }
+    .nav-var {
+        display: none;
+    }
+}
+.about-wapper {
+    display: flex;
+    height: 600px;
+    background-color: #c8d6e5;
+}
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    .my-pic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        img {
+            width: 370px;
+            padding: 20px;
+        }
+    }
+    .my-intro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        padding: 20px;
+        .intro-detail {
+            h2 {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        .my-pic {
+            width: 80%;
+            img {
+                width: 360px;
+            }
+        }
+        .my-intro {
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width:375px) {
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        .my-intro {
+            width: 100%;
+        }
+    }    
 }

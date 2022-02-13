@@ -15,23 +15,24 @@
     <header>
         <nav>
             <div class="nav-var">
-                <a href="">Home</a>
-                <a href="">About me</a>
-                <a href="">Project</a>
-                <a href="">Contact</a>
+                <a href="#home">Home</a>
+                <a href="#about-me">About me</a>
+                <a href="#skill">Skill</a>
+                <a href="#project">Project</a>
+                <a href="#contact">Contact</a>
             </div>
         </nav>
     </header>
     <main>
-        <div class="name">
+        <div class="name" id="home">
             <h1>Naoki Ogata</h1>
             <p>something about me</p>
             <i class="fas fa-angle-down"></i>
         </div>
-        <div class="about-wapper">
-            <div class="about-me">
+        <div class="about-wrapper">
+            <div class="about-me" id="about-me">
                 <div class="my-pic">
-                    <img src="./img/23Ww6uvZ_400x400.jpeg" alt="">
+                    <img src="./img/IMG_0258 2.jpg" alt="">
                 </div>
                 <div class="my-intro">
                     <div class="intro-detail">
@@ -40,10 +41,103 @@
                     </div>
                 </div>
             </div>
-    
+        </div>
+        <div class="skill-wrapper">
+            <div class="skill" id="skill">
+                <h2>Skill</h2>
+                <div class="icons">
+                    <div class="icon">
+                        <img src="./img/icons8-html-5-48.png" alt="">
+                        <p>HTML</p>
+                    </div>
+                    <div class="icon">
+                        <img src="./img/icons8-css3-48.png" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="./img/icons8-sass-48.png" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="./img/icons8-javascript-96.png" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="./img/icons8-angular-a-typescript-based-open-source-web-application-framework-48.png" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="./img/icons8-react-80.png" alt="">
+                    </div>
+                    <!-- <div class="icon">
+                        <i class="fa fa-html5"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-html5"></i>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="project-wrapper">
+            <div class="project" id="project">
+                <div class="pro-detail php">
+                    <img src="./img/Screen Shot 2022-02-10 at 13.51.56.png" alt="">
+                    <div class="php-detail">
+                        <h3>Dynamic dashboard</h3>
+                        <p>
+                            HTML, Sass, Bootstrap5, Javascript, jQuery, PHP, MySQL 
+                        </p>
+                        <a href="">Detail</a>
+                    </div>
+                </div>
+                <div class="pro-detail bakery">
+                    <img src="./img/Screen Shot 2022-02-10 at 13.51.56.png" alt="">
+                    <div class="bakery-detail">
+                        <h3>Online shopping system</h3>
+                        <p>
+                            HTML, Sass, Angular JS, jQuery
+                        </p>
+                        <a href="">Detail</a>
+                    </div>
+                </div>
+                <div class="pro-detail musician">
+                    <img src="./img/Screen Shot 2022-02-10 at 13.51.56.png" alt="">
+                    <div class="musician-detail">
+                        <h3>Responsive Website</h3>
+                        <p>
+                            HTML, Sass, Bootstrap, Javascript, jQuery
+                        </p>
+                        <a href="">Detail</a>
+                    </div>
+                </div>
+                <div class="pro-detail react">
+                    <img src="./img/Screen Shot 2022-02-10 at 13.51.56.png" alt="">
+                    <div class="react-detail">
+                        <h3>React</h3>
+                        <p>
+                            React
+                        </p>
+                        <a href="">Detail</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
+        <div class="contact-wrapper">
+            <div class="contact">
+                <!-- <h2>Contact</h2> -->
+                <form id="form">
+                    <div class="top">
+                        <input id="inp1" type="text" placeholder="Your Name*" required>
+                        <input type="email" placeholder="Your Email*" required>
+                    </div>
+                    <div class="mid">
+                        <input type="text" placeholder="Subject*" required>
+                    </div>
+                    <div class="btm">
+                        <textarea cols="30" rows="10" placeholder="Your message*" required></textarea>
+                    </div>
+                    <button>Send</button>
+                </form>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

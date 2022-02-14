@@ -7,44 +7,90 @@
     <link rel="stylesheet" href="./stylesheet/style.css">
     <link rel="stylesheet" href="./stylesheet/reset.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- <script src="./js/style.js"></script> -->
+    <!-- <script src="./js/jquery.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/c09e3dd97d.js" crossorigin="anonymous"></script>
     <title>Naoki Ogata</title>
-
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="nav">
             <div class="nav-var">
-                <a href="#home">Home</a>
-                <a href="#about-me">About me</a>
-                <a href="#skill">Skill</a>
-                <a href="#project">Project</a>
-                <a href="#contact">Contact</a>
+                <div class="logo">
+                    <a href="#home">Naoki Ogata</a>
+                </div>
+                <div class="nav-items">
+                    <a href="#home">Home</a>
+                    <a href="#about-me">About me</a>
+                    <a href="#skill">Skill</a>
+                    <a href="#project">Project</a>
+                    <a href="#contact">Contact</a>    
+                </div>
             </div>
+        </nav>
+        <div class="hamburger" id="small">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="globalMenuSp">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <div class="name" id="home">
-            <h1>Naoki Ogata</h1>
-            <p>something about me</p>
-            <i class="fas fa-angle-down"></i>
+            <div class="name-wrapper">
+                <div class="greeting">
+                    <h1 id="hello">Hi, I'm Naoki</h1>  
+                    <p>
+                        Thank you very much for visiting my page.
+                        I'm a passionate Front-end web developer from Japan 🇯🇵
+                        Please feel free to contact me :)
+                    </p>  
+                </div>
+                <div class="info">
+                    <div class="resume">
+                        <a target="_blank" href="https://docs.google.com/document/d/1IN9i-SPQtqcF0WHwiBwOpeEYXmagwvM7wvhU_DJyeJ0/edit?usp=sharing">Resume</a>
+                        <a target="_blank" href="https://docs.google.com/document/d/1IN9i-SPQtqcF0WHwiBwOpeEYXmagwvM7wvhU_DJyeJ0/edit?usp=sharing"><img src="./img/icons8-document (1).gif" alt=""></a>  
+                    </div>
+                    <div class="contact-me">
+                        <a href="#contact">Contact me</a>
+                        <a href="#contact"><img src="./img/contact.gif" alt=""></a>
+                    </div>  
+                </div>    
+            </div>
         </div>
         <div class="about-wrapper">
+            <div class="title-wrapper">
+                <h2>About me</h2>
+            </div>
             <div class="about-me" id="about-me">
                 <div class="my-pic">
                     <img src="./img/IMG_0258 2.jpg" alt="">
                 </div>
                 <div class="my-intro">
                     <div class="intro-detail">
-                        <h2>About me</h2>
-                        <p>Hi! Thank you very much for visiting my site. I'm currently studying at Tamwood carrier college.Hi! Thank you very much for visiting my site. I'm currently studying at Tamwood carrier college.<br><br>Hi! Thank you very much for visiting my site. I'm currently studying at Tamwood carrier college.Hi! Thank you very much for visiting my site. I'm currently studying at Tamwood carrier college.<br><br>Hi! Thank you very much for visiting my site. I'm currently studying at Tamwood carrier college.Hi! Thank you very much for visiting my site. I'm currently studying at Tamwood carrier college.</p>
+                        <p>
+                            I am currently studying the Web Development program in Canada. I'm expecting to complete all my courses by March and look for a co-op opportunity in Toronto. My study at Tamwood for the Web development program has been very interested and meaningful. I love to learn new things and explore. <br><br>
+
+                            I was born and raised in Tokushima, Japan.
+                            After I graduated from university in Japan, I came to Toronto Canada for studying English. 
+                            After staying in Toronto for about 2 years, I went back to Japan due to Covid-19. And I'm back here again!
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="skill-wrapper">
+            <h2>Skill</h2>
             <div class="skill" id="skill">
-                <h2>Skill</h2>
                 <div class="icons">
                     <div class="icon">
                         <img src="./img/icons8-html-5-48.png" alt="">
@@ -52,68 +98,116 @@
                     </div>
                     <div class="icon">
                         <img src="./img/icons8-css3-48.png" alt="">
+                        <p>CSS</p>
                     </div>
                     <div class="icon">
                         <img src="./img/icons8-sass-48.png" alt="">
+                        <p>Sass</p>
                     </div>
                     <div class="icon">
                         <img src="./img/icons8-javascript-96.png" alt="">
+                        <p>Javascript</p>
+                    </div>
+                    <div class="icon">
+                        <img src="./img/icons8-jquery-50.png" alt="jquery">
+                        <p>jQuery</p>
                     </div>
                     <div class="icon">
                         <img src="./img/icons8-angular-a-typescript-based-open-source-web-application-framework-48.png" alt="">
+                        <p>Angular JS</p>
+                    </div>
+                    <div class="icon">
+                        <img src="./img/icons8-bootstrap-48.png" alt="">
+                        <p>Bootstrap</p>
                     </div>
                     <div class="icon">
                         <img src="./img/icons8-react-80.png" alt="">
-                    </div>
-                    <!-- <div class="icon">
-                        <i class="fa fa-html5"></i>
+                        <p>React</p>
                     </div>
                     <div class="icon">
-                        <i class="fa fa-html5"></i>
-                    </div> -->
+                        <img src="./img/icons8-node-js-48.png" alt="">
+                        <p>Node.js</p>
+                    </div>
+                    <div class="icon">
+                        <img src="./img/icons8-mysql-logo-48.png" alt="">
+                        <p>MySQL</p>
+                    </div>
+                    <div class="icon">
+                        <img src="./img/icons8-github-50.png" alt="github">
+                        <p>Github</p>
+                    </div>
+
                 </div>
+                <!-- <div class="uses">
+                    <div class="vscode">
+                        <img src="./img/icons8-visual-studio-30.png" alt="vs code">
+                    </div>
+                </div> -->
             </div>
         </div>
         <div class="project-wrapper">
+            
+            <h2>Project</h2>
             <div class="project" id="project">
                 <div class="pro-detail php">
                     <img src="./img/Screen Shot 2022-02-10 at 13.51.56.png" alt="">
                     <div class="php-detail">
                         <h3>Dynamic dashboard</h3>
-                        <p>
-                            HTML, Sass, Bootstrap5, Javascript, jQuery, PHP, MySQL 
-                        </p>
-                        <a href="">Detail</a>
+                        <div class="para">
+                            <p>
+                                HTML, Sass, Bootstrap5, Javascript, jQuery, PHP, MySQL 
+                            </p>
+                            <p>
+                                A dynamic dashboard for the educational institution. Dashboard and content pages are created by HTML, Sass, Javascript and jQuery for the front-end. PHP to routine pages, Hash and salt technique for secured data storing. 
+                            </p>    
+                        </div>
                     </div>
                 </div>
                 <div class="pro-detail bakery">
-                    <img src="./img/Screen Shot 2022-02-10 at 13.51.56.png" alt="">
+                    <img src="./img/Screen Shot 2022-02-14 at 1.28.41.png" alt="">
                     <div class="bakery-detail">
                         <h3>Online shopping system</h3>
-                        <p>
-                            HTML, Sass, Angular JS, jQuery
-                        </p>
-                        <a href="">Detail</a>
+                        <div class="para">
+                            <p>
+                                HTML, Sass, Angular JS, jQuery
+                            </p>
+                            <p>
+                                An in-class project which uses Angular JS. HTML, Sass and jQuery for front-end. Angular JS to add items into a shopping cart and display them on a modal box with details and total price. Allow users to edit and delete items from the shopping cart.      
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="pro-detail musician">
-                    <img src="./img/Screen Shot 2022-02-10 at 13.51.56.png" alt="">
+                    <img src="./img/musician.png" alt="">
                     <div class="musician-detail">
                         <h3>Responsive Website</h3>
-                        <p>
-                            HTML, Sass, Bootstrap, Javascript, jQuery
-                        </p>
-                        <a href="">Detail</a>
+                        <div class="para">
+                            <p>
+                                HTML, Sass, Bootstrap, Javascript, jQuery
+                            </p>    
+                            <p>
+                                The landing page with a responsive design for a musician uses HTML, Sass and Bootstrap. Javascript to validate each input box by Regular expression. Show modal box with animation by jQuery. 
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="pro-detail react">
-                    <img src="./img/Screen Shot 2022-02-10 at 13.51.56.png" alt="">
+                    <img src="./img/test.png" alt="">
                     <div class="react-detail">
                         <h3>React</h3>
-                        <p>
-                            React
-                        </p>
-                        <a href="">Detail</a>
+                        <div class="para">
+                            <p>
+                                HTML, Sass, Javascript, React
+                            </p>
+                            <p>
+                                test <br>
+                                test <br>
+                                test <br>
+                                test <br>
+                                test <br>
+                            </p>
+    
+                        </div>
                     </div>
                 </div>
             </div>
@@ -121,23 +215,42 @@
     </main>
     <footer>
         <div class="contact-wrapper">
-            <div class="contact">
-                <!-- <h2>Contact</h2> -->
-                <form id="form">
-                    <div class="top">
-                        <input id="inp1" type="text" placeholder="Your Name*" required>
-                        <input type="email" placeholder="Your Email*" required>
-                    </div>
-                    <div class="mid">
-                        <input type="text" placeholder="Subject*" required>
-                    </div>
-                    <div class="btm">
-                        <textarea cols="30" rows="10" placeholder="Your message*" required></textarea>
-                    </div>
-                    <button>Send</button>
-                </form>
+            <h2>Contact</h2>
+            <div class="contact" id="contact">
+                <div class="contact-detail">
+                    <h3>Feel free to contact me</h3>
+                    <a href="tel:+14377722943">437-772-2943</a>
+                    <a href="mailto:ogata.nok@gmail.com" target="_blank">ogata.nok@gmail.com</a>
+                    <div class="sns">
+                        <a href="https://www.linkedin.com/in/naoki-ogata-83b3b4231/"><img src="./img/icons8-linkedin-48.png" alt=""></a>
+                        <a href="https://github.com/Nnookk"><img src="./img/icons8-github-50.png" alt=""></a>
+                    </div>    
+                </div>
+                <div class="contact-right">
+                    <img src="./img/icons8-gmail-logo.gif" alt="">
+                </div>
             </div>
         </div>
+        <p id="footer">© Naoki Ogata 2022</p>
     </footer>
+    <script>
+        $(function() {
+            $('.hamburger').click(function() {
+                $(this).toggleClass('active');
+                if ($(this).hasClass('active')) {
+                    $('.globalMenuSp').addClass('active');
+                } else {
+                    $('.globalMenuSp').removeClass('active');
+                } 
+            });
+        });
+        $(function() {
+            $('.globalMenuSp a[href]').click(function() {
+                $('.globalMenuSp').removeClass('active');
+                $('.hamburger').removeClass('active');
+            });
+        });
+
+    </script>
 </body>
 </html>
